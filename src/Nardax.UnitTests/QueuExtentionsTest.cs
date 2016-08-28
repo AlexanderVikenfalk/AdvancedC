@@ -7,6 +7,7 @@ namespace Nardax.UnitTests
     [TestClass]
     public class QueueExtentionsTest
     {
+        // Comment
         Queue<string> _queue;
         public QueueExtentionsTest()
         {
