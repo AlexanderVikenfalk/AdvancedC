@@ -74,8 +74,9 @@ namespace Nardax.Tests
             string expected = null;
 
             Assert.AreEqual(expected, result);
+        }
  
- [TestMethod]
+        [TestMethod]
         public void RepeatMe_DefaultValue()
         {
             var expected = "NyanCatNyanCatNyanCatNyanCatNyanCat";
@@ -83,7 +84,7 @@ namespace Nardax.Tests
 
             Assert.AreEqual(expected, result);
         }
+    }
+
 }
 
-        }
-}

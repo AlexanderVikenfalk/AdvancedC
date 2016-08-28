@@ -49,11 +49,21 @@ namespace Nardax
         {
             var sb = new StringBuilder();
 
+            if (value == null)
+            {
+                return null; 
+            }
+
             foreach (var x in value)
             {
                 sb.Append(x);
                 sb.Append(c);
 
+            }
+
+            if (sb.Length>1)
+            {
+                sb.Remove(sb.Length - 1, 1);
             }
 
             // OBS ej klar
