@@ -54,8 +54,28 @@ namespace Nardax.Tests
 
             Assert.AreEqual(expected, result);
         }
+    
+   [TestMethod]
+        public void AddCharBetween()
+        {
+            var testString = "abcde";
+            var result = testString.AddCharBetween('-');
+            string expected = "a-b-c-d-e";
+
+            Assert.AreEqual(expected, result);
+
+        }
 
         [TestMethod]
+        public void AddCharBetween_CheckNull()
+        {
+            string testString = null;
+            var result = testString.AddCharBetween('-');
+            string expected = null;
+
+            Assert.AreEqual(expected, result);
+ 
+ [TestMethod]
         public void RepeatMe_DefaultValue()
         {
             var expected = "NyanCatNyanCatNyanCatNyanCatNyanCat";
@@ -63,5 +83,7 @@ namespace Nardax.Tests
 
             Assert.AreEqual(expected, result);
         }
-    }
+}
+
+        }
 }

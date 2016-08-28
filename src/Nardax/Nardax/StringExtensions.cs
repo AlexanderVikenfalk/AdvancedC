@@ -45,6 +45,22 @@ namespace Nardax
             return sb.ToString();
         }
 
+        public static string AddCharBetween(this string value, char c)
+        {
+            var sb = new StringBuilder();
 
+            foreach (var x in value)
+            {
+                sb.Append(x);
+                sb.Append(c);
+
+            }
+
+            // OBS ej klar
+
+            return sb.ToString();
+
+        }
+        
     }
 }
